@@ -1,0 +1,123 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00f2fe;
+}
+
+/* Section cards */
+section {
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-3px);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Skills list */
+ul {
+    list-style: none;
+}
+
+ul li {
+    background: #f0f0f0;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+ul li:hover {
+    background: #d9f7ff;
+}
+
+/* Contact form */
+form input, form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border: 1px solid #4facfe;
+    outline: none;
+}
+
+form button {
+    background: #4facfe;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #00c6ff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+    <footer>
+    <p>Made with ❤️ by <strong>Usama Awol</strong> | &copy; 2025 My Portfolio</p>
+</footer>
+}
+
+
