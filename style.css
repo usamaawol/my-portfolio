@@ -1,123 +1,155 @@
-/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* General body styling */
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(to right, #4facfe, #00f2fe);
-    color: #333;
-    line-height: 1.6;
+    background: #0f172a;
+    color: #e2e8f0;
+    scroll-behavior: smooth;
 }
 
-/* Header */
+/* HEADER */
 header {
-    background: #222;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
 header h1 {
-    margin-bottom: 10px;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #38bdf8;
 }
 
 nav a {
-    color: white;
-    margin: 0 15px;
+    margin-left: 20px;
+    color: #e2e8f0;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #00f2fe;
+    color: #38bdf8;
 }
 
-/* Section cards */
-section {
-    padding: 30px;
-    margin: 20px auto;
-    max-width: 800px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
 }
 
-section:hover {
-    transform: translateY(-3px);
-}
-
-h2 {
+.hero h2 {
+    font-size: 3rem;
     margin-bottom: 15px;
-    color: #333;
+    animation: fadeIn 1s ease-in-out;
 }
 
-/* Skills list */
-ul {
-    list-style: none;
+.hero p {
+    max-width: 600px;
+    font-size: 1.2rem;
+    opacity: 0.8;
 }
 
-ul li {
-    background: #f0f0f0;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 6px;
-    transition: background 0.3s;
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-ul li:hover {
-    background: #d9f7ff;
+section {
+    padding: 80px 60px;
 }
 
-/* Contact form */
+/* TITLES */
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #38bdf8;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* SKILLS */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-box {
+    background: #1e293b;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    transform: translateY(-8px);
+    background: #334155;
+}
+
+/* CONTACT FORM */
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 form input, form textarea {
-    width: 100%;
-    margin: 10px 0;
     padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    transition: border 0.3s ease;
-}
-
-form input:focus, form textarea:focus {
-    border: 1px solid #4facfe;
+    border-radius: 8px;
+    border: none;
     outline: none;
 }
 
 form button {
-    background: #4facfe;
-    color: white;
-    border: none;
     padding: 12px;
-    border-radius: 6px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 8px;
+    color: #0f172a;
+    font-weight: 700;
     cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s ease;
+    transition: 0.3s;
 }
 
 form button:hover {
-    background: #00c6ff;
+    background: #0ea5e9;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
     text-align: center;
-    padding: 15px;
-    background: #222;
-    color: white;
-    margin-top: 20px;
-    font-size: 14px;
-    <footer>
-    <p>Made with ❤️ by <strong>Usama Awol</strong> | &copy; 2025 My Portfolio</p>
-</footer>
+    padding: 20px;
+    background: #1e293b;
+    margin-top: 40px;
 }
+
+/* SECTION ANIMATION */
+section, .hero {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 1s;
+}
+
 
 

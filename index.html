@@ -3,45 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>My Modern Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- LINK CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <h1>Usama Awol</h1>
         <nav>
+            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
+    <div class="hero" id="home">
+        <h2>Hello, I'm Usama 👋</h2>
+        <p>Aspiring Web Developer | Creating beautiful and modern websites.</p>
+    </div>
+
     <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I am learning HTML and CSS. This is my first portfolio project.</p>
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+            I'm a passionate learner diving into the world of web development.  
+            I design modern, minimal and interactive interfaces using clean HTML, CSS and JavaScript.
+        </p>
     </section>
 
     <section id="skills">
-        <h2>My Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Learning Web Design</li>
-        </ul>
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">Responsive Design</div>
+        </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Me</h2>
+        <h2 class="section-title">Contact Me</h2>
         <form>
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
+            <textarea placeholder="Your Message" rows="4"></textarea>
+            <button type="submit">Send Message</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        <p>Made with ❤️ by Usama Awol | © 2025</p>
     </footer>
+
+    <!-- LINK JS -->
+    <script src="script.js"></script>
 </body>
 </html>
